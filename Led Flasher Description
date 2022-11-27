@@ -1,0 +1,14 @@
+I created this as I had a requirement to have a low power LED flash every 10 seconds, the device
+is powered by 3 x CR2032 cells providing 9VDC, so having the circuit use as little power as possible
+was paramount.
+
+I tried a few discete designs, but none really provided what I wanted, so I decided to use a low
+power TLC555 timer as this keeps the component count low, the chip is available and cheap.
+
+To ensure the lowest current drain, I decided to use the charge on the timing capacitor to flash
+the LED, the LED is a nice bright flash so there's no need to use the normal (pin 3) output using
+another resistor.
+
+The TLC555 is wired in Astable Multivibrator configuration but with no second timing resistor, this being
+replaced with the LED.
+
